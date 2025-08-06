@@ -1,10 +1,22 @@
 import React from "react";
-import Counter from "./Components/Counter";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart"
+import Navbar from "./Components/Navbar";
+
 
 
 const App = () => {
   return (<div>
-       <Counter/>
+    <div>
+    <Navbar/>
+    </div>
+   
+    
+    <Routes>
+       <Route path="/" element={<Home/>}/>
+       <Route path="/cart" element={<Cart/>}/>
+    </Routes>
   </div>)
 };
 
