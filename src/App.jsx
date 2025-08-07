@@ -8,7 +8,7 @@ import Navbar from "./Components/Navbar";
 
 const App = () => {
   return (<div>
-    <div>
+    <div className="bg-slate-900">
     <Navbar/>
     </div>
    
@@ -17,6 +17,7 @@ const App = () => {
        <Route path="/" element={<Home/>}/>
        <Route path="/cart" element={<Cart/>}/>
     </Routes>
+    
   </div>)
 };
 
